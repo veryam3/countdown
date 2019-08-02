@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>MCD2019</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="assets/css/mountain.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+				<!-- Header -->
+					<header id="header">
+						<h1 class="text-light">Meta Canales Digitales 2019</h1>
+					<nav>
+						
+<div class="flipper" data-reverse="true" data-datetime="2019-12-17 12:00:00" data-template="ddd|HH|ii|ss" data-labels="Días|Horas|Minutos|Segundos" id="myFlipper"></div>
+<br><br><br><br><br><br><br><br>		
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+					
+					</footer>
+
+			</div>
+		</div>
+		<script src="assets/js/jquery-3.4.1.min.js"/>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery.flipper-responsive.js"/></script>
+		<script>
+		  jQuery(function ($) {
+		  $('#myFlipper').flipper('init');
+		  $('#modalFlipper').flipper('init');
+		});
+		</script>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
