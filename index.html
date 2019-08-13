@@ -31,17 +31,21 @@
 
 			</div>
 		</div>
-		<script src="assets/js/countdown.js"></script>
-		<script src="assets/js/jquery-3.4.1.min.js"/>
+        <script src="assets/js/countdown.js"></script>
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
-	
-	
-		<script src="assets/js/jquery.flipper-responsive.js"/></script>
+		<script src="assets/js/jquery.flipper-responsive.js"></script>
+		
 		<script>
-		  jQuery(function ($) {
-		  $('#myFlipper').flipper('init');
-		  $('#modalFlipper').flipper('init');
-		});
+			$( document ).ready(function() {
+
+        		var fecha = __JsDateTo.anho + "-" + __JsDateTo.mes +"-"+ __JsDateTo.dia +" " + __JsDateTo.hora+":"+__JsDateTo.min+":"+__JsDateTo.seg;
+
+        		console.log( "fecha loaded " + fecha);
+        		$('#myFlipper').attr('data-datetime', fecha);
+    			$('#myFlipper').flipper('init');
+		  		$('#modalFlipper').flipper('init');
+    		});
 		</script>
 		<script>
 			window.onload = function() { document.body.classList.remove('is-preload'); }
